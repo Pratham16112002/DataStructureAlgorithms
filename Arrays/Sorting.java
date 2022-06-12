@@ -5,7 +5,7 @@ public class Sorting {
         }
     }
     public static void bubbleSort(int arr[]){
-        for(int i=0 ; i<arr.length-1 ; i++){
+        for(int i=0 ; i<arr.length-1 ; i++){ // n- 1 
             for(int j = 0 ; j<arr.length-i-1 ; j++ ){
                 if(arr[j]>arr[j+1]){
                     // Swap the Elements
@@ -16,10 +16,24 @@ public class Sorting {
             }
         }
     }
+    public static void SelectionSort(int arr[]){
+        for(int i = 0 ; i<arr.length -1 ; i++){
+            int smallest = i ; //Set the ith element as the samllest element 
+            for( int j = i+1 ; j<arr.length ; j++){
+                if(arr[smallest]>arr[j]){
+                    smallest = j ;// If we found an element which is less then the ith the we set that element as the samllest one 
+                }
+            }
+            // Swapping the smalleset element with the ith element 
+            int temp = arr[smallest];
+            arr[smallest]=arr[i];
+            arr[i]=temp; 
+        }
+    }
     public static void main(String args[]){
         int arr[] = {7,8,3,1,2};
         // Calling the bubble sort function 
-        bubbleSort(arr);
+        SelectionSort(arr);
         // Calling the print function 
         printArray(arr);
         
