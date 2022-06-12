@@ -1,9 +1,8 @@
-package Code1.Arrays;
-
 import java.util.Scanner;
 
-public class RcBinarySearch {
-	public static boolean binarySearch(int marks[] , int low , int high , int key) {
+
+public class RcBinarySearch2 {
+    public static boolean binarySearch(int marks[] , int low , int high , int key) {
 		while(low<=high && low<=marks.length -1 ) {
 			int mid=low + ( high - low)/2;
 			if(key==marks[mid])return true;

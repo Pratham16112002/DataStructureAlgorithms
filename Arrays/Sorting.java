@@ -1,5 +1,3 @@
-package Code1.Arrays;
-
 public class Sorting {
     public static void printArray(int arr[]){
         for(int i = 0 ; i<arr.length  ; i++ ){
@@ -22,7 +20,8 @@ public class Sorting {
         int arr[] = {7,8,1,2,1,2};
         // Calling the bubble sort function 
         bubbleSort(arr);
+        // Calling the print function 
+        printArray(arr);
         
     }
-
 }
