@@ -13,7 +13,7 @@ void rotate(vector <int> & hello , int k){
     }
 
     for(int i = 0 ; i< hello.size() ; i++){
-        cout<<hello[i]<<endl;
+        cout<<hello[i];
     }
 }
 
@@ -29,7 +29,7 @@ int main(){
             cin>>a;
             hello.push_back(a);
         }
-        rotate(hello,k%n);
+        rotate(hello,n- (k%n));
         t--;
     }
     return 0;
