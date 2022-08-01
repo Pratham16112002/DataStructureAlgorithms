@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.ejs": "html",
+    "*.html": "html",
+    "string_view": "cpp",
+    "regex": "cpp"
+  }
+}
