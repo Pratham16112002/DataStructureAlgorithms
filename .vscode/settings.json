@@ -3,6 +3,10 @@
     "*.ejs": "html",
     "*.html": "html",
     "string_view": "cpp",
-    "regex": "cpp"
+    "regex": "cpp",
+    "array": "cpp",
+    "string": "cpp",
+    "ranges": "cpp",
+    "span": "cpp"
   }
 }
