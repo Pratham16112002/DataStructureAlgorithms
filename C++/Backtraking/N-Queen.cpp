@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool isSafe(int** arr , int x , int y , int n ){
+bool isSafe(int** arr , int x , int y , int n ){ // This function will check weather the position is valid for the queen or not 
     for(int row = 0 ; row <x ; row ++){
         if(arr[row][y] == 1){ // Tp check if any queen is present horizontally in the board     
             return false;
@@ -31,7 +31,7 @@ bool isSafe(int** arr , int x , int y , int n ){
 }
 
 bool nQueen (int** arr , int x , int n){
-    if(x>=n){
+    if(x>=n){ // If we have placed out n - queens then we will return true 
         return true; 
     }
 
@@ -42,9 +42,7 @@ bool nQueen (int** arr , int x , int n){
             if(nQueen(arr,x+1,n)){
                 return true;
             }
-
             arr[x][col] = 0 ; // This the the backtracing step in the solution 
-
          }
 
     }
